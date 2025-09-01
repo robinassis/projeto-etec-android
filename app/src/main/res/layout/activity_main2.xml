@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="-11dp"
+    tools:layout_editor_absoluteY="-49dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-56dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/editTextText7"
+            android:layout_width="201dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="(11) 9xxxx-xxxxx"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="28dp"
+            android:text="Email:"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+        <TextView
+            android:id="@+id/txtSenha"
+            android:layout_width="69dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:text="Nova Senha:"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText6"
+            app:layout_constraintHorizontal_bias="0.921"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtWhatsapp"
+            app:layout_constraintVertical_bias="0.054" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTintMode="multiply"
+            android:text="Cadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+        <TextView
+            android:id="@+id/textVoltar"
+            android:layout_width="112dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Voltar"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCadastrar" />
+
+        <TextView
+            android:id="@+id/txtCPF"
+            android:layout_width="63dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="28dp"
+            android:text="CPF: "
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:text="End.:"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+            app:layout_constraintHorizontal_bias="0.973"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCPF" />
+
+        <TextView
+            android:id="@+id/txtFone"
+            android:layout_width="54dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:text="Fone:"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText7"
+            app:layout_constraintHorizontal_bias="0.973"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/txtWhatsapp"
+            android:layout_width="69dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:text="Whasapp: "
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFone" />
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="61dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="28dp"
+            android:text="Nome:"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="197dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="Digite o seu nome"
+            android:inputType="text"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="199dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="Digite o seu endereço
+"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="198dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="email@email.com.br"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="199dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="123.456.789-01"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="146dp"
+            android:layout_height="114dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chave" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="271dp"
+            android:layout_height="47dp"
+            android:text="Cadastra-se"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="198dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="80dp"
+            android:ems="10"
+            android:hint="********"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="202dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="+55(11)9xxxx-xxxx
+    "
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
